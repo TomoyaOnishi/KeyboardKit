@@ -7,7 +7,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let layoutGuide = KeyboardLayoutGuide(defaultPosition: .safeAreaBottom(constant: 0), isAnchoredViewsAnimationEnabled: true)
+        let layoutGuide = KeyboardLayoutGuide(defaultPosition: .safeAreaBottom(constant: 0))
         view.addLayoutGuide(layoutGuide)
         orangeView.topAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor, constant: 0).isActive = true
         orangeView.leadingAnchor.constraint(equalTo: keyboardLayoutGuide.leadingAnchor, constant: 0).isActive = true
